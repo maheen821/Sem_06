@@ -1,199 +1,28 @@
-plot(2,9)
-plot(c(1,8), c(2,5))
-plot(c(1,2,3,4,5),c(6,7,8,9,10))
- 
-x <- c(1,2,3,4,5)             
-y <- c(3,6,4,10,12)             
+# Create a vector of pies
+x <- c(100,200,300, 400,500)
 
-plot(x,y) 
+# Display the pie chart
+pie(x)
+x <- c(100,200,300,400)
 
-plot(5:15)
+# Display the pie chart and start the first pie at 90 degrees
+pie(x, init.angle = 360)
 
-plot(5:15 , type="l")
-plot(5:15, main="status report", xlab = "this is y axis" , ylab = "this is y axis")
-plot(5:15, col="green")
-plot(5:15, cex=4)
-plot(5:15, pch =20 , cex= 3)              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-             
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-               
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              ))plot(2,9)
-plot(c(1,8), c(2,5))
-plot(c(1,2,3,4,5),c(6,7,8,9,10))
- 
-x <- c(1,2,3,4,5)             
-y <- c(3,6,4,10,12)             
+# Create a vector of pies
+x <- c(1,2,3,4)
 
-plot(x,y) 
+# Create a vector of labels
+mylabel <- c("food", "home", "clothes", "rent")
 
-plot(5:15)
+# Display the pie chart with labels
+pie(x, label = mylabel, main = "Expense Tracker")
 
-plot(5:15 , type="l")
-plot(5:15, main="status report", xlab = "this is y axis" , ylab = "this is y axis")
-plot(5:15, col="green")
-plot(5:15, cex=4)
-plot(5:15, pch =20 , cex= 3)              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-             
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-               
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              ))
+# Create a vector of colors
+colors <- c("brown", "blue", "pink", "purple")
+
+# Display the pie chart with colors
+pie(x, label = mylabel, main = "Expense Tracker", col = colors)
+legend("bottomright", mylabel, fill = colors)
+
+
+
