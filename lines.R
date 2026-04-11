@@ -1,28 +1,13 @@
-# Create a vector of pies
-x <- c(100,200,300, 400,500)
+plot(1:20 , type="l")
 
-# Display the pie chart
-pie(x)
-x <- c(100,200,300,400)
+plot(1:20 , type="l" , col="orange")
+plot(1:10, type="l", lwd=2)
+plot(1:10, type="l", lwd=3, lty=4)
 
-# Display the pie chart and start the first pie at 90 degrees
-pie(x, init.angle = 360)
-
-# Create a vector of pies
-x <- c(1,2,3,4)
-
-# Create a vector of labels
-mylabel <- c("food", "home", "clothes", "rent")
-
-# Display the pie chart with labels
-pie(x, label = mylabel, main = "Expense Tracker")
-
-# Create a vector of colors
-colors <- c("brown", "blue", "pink", "purple")
-
-# Display the pie chart with colors
-pie(x, label = mylabel, main = "Expense Tracker", col = colors)
-legend("bottomright", mylabel, fill = colors)
-
-
-
+#multiples lines
+line1 <- c(1,2,3,4,5,6,12)
+line2 <- c(2,6,7,8,12)
+line3<- c(2,5,6,10,12)
+plot(line1, type = "l", col = "blue")
+lines(line2, type="l", col = "red")
+lines(line3, type="l", col = "black")
